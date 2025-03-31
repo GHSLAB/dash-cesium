@@ -8,3 +8,14 @@ plotly dash using cesium
 ![alt text](./example/OsmBuildings.jpg)
 
 ![alt text](./example/cesium_module2dash.jpg)
+
+
+### Cesium Ion
+
+将 `accessToken-example.js` 重命名为 `accessToken.js`，然后设置从`https://ion.cesium.com/tokens`获取的`accessToken`
+
+```js
+// 设置accessToken
+// 地址: https://ion.cesium.com/tokens.
+export const accessToken = '';
+```
