@@ -1,9 +1,10 @@
 # dash-cesium
 plotly dash using cesium
 
-<img src="./example/cesium.png" alt="logo" width="300">
+<img src="./example/cesium.jpg" alt="logo" width="300">
 
-![example|300px](./example/example-cesium.png)
-![alt text](./example/OsmBuildings.png)
+![example|300px](./example/example-cesium.jpg)
 
-![alt text](./example/cesium_module2dash.png)
+![alt text](./example/OsmBuildings.jpg)
+
+![alt text](./example/cesium_module2dash.jpg)
