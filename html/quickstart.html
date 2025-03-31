@@ -11,10 +11,11 @@
 <body>
     <div id="cesiumContainer"></div>
     <script type="module">
-        // Your access token can be found at: https://ion.cesium.com/tokens.
-        // This is the default access token from your ion account
+        // 从 accessToken.js 文件中引入 accessToken
+        import { accessToken } from '../assets/accessToken.js';
 
-        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhMDA5NWUzOS1hYTk1LTRlMDUtODI0Yi0yZWE1YjVjZDQ3YjAiLCJpZCI6NTA3MzcsImlhdCI6MTYxNzc5NDYxN30.NrmD4vkfsF-LoFz0Na1_CUS1mIfEFyvukGinyBQV-Ts';
+        // 使用引入的 accessToken
+        Cesium.Ion.defaultAccessToken = accessToken;
 
         // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
         const viewer = new Cesium.Viewer('cesiumContainer', {

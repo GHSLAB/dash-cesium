@@ -1,8 +1,10 @@
-export async function setupCesiumViewer(id) {
-    // Your access token can be found at: https://ion.cesium.com/tokens.
-    // This is the default access token from your ion account
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhMDA5NWUzOS1hYTk1LTRlMDUtODI0Yi0yZWE1YjVjZDQ3YjAiLCJpZCI6NTA3MzcsImlhdCI6MTYxNzc5NDYxN30.NrmD4vkfsF-LoFz0Na1_CUS1mIfEFyvukGinyBQV-Ts';
+// 引入 accessToken
+import { accessToken } from './accessToken.js';
 
+// 使用引入的 accessToken
+Cesium.Ion.defaultAccessToken = accessToken;
+
+export async function setupCesiumViewer(id) {
     // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
     const viewer = new Cesium.Viewer('cesiumContainer', {
         terrain: Cesium.Terrain.fromWorldTerrain(),
